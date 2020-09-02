@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoflow.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/logoflow.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <title>Flow Glam</title>
+    
+</head>
+<body>
+    <main class='container-fluid'>
+        <div class="col-md-6 p-4 my-auto">
+            <h4>Date Register</h4>
+            <div class="card card-body">
+                <h5>User</h5>
+                <div id='userName'></div>    
+            </div>
+            <form class='card card-body' id="serviceForm">                
+                <div class="form-group">
+                    <textarea id="description" rows = "1" placeholder="Service's name" class="form-control" autofocus></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" placeholder="Service's date" class="form-control">
+                </div>  
+                <div class="form-group">
+                    <input type="time" id="hour" placeholder="Service's time" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type='number' id='price' step="any" placeholder="Service's price" class="form-control">                        
+                </div>
+                <div class="form-group">
+                    <input type='number' id='turnNum' placeholder="Service's number" class="form-control">                        
+                </div>
+                <div class="form-group">
+                    <textarea id="comment" rows = "2" placeholder="Service's comment" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-md btn-primary">Save</button>
+            </form>
+            <div id="message"></div>
+            </div>
+        </div> 
+    </main>
+    <script src="./appservice.js"></script>
+</body>
+</html>

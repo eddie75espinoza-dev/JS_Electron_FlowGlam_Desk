@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoflow.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/logoflow.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <title>Flow Glam</title>    
+</head>
+<body>
+    <main class='container'>
+        <div class="card card-body my-auto">
+            <h6>Day's Services</h6>
+        </div>
+        <form class='card card-body' id="dateForm">
+            <label for="date">Date Consult</label>
+            <input type='date' id='dateConsult' autofocus>
+            <button class="btn btn-md btn-primary">Search</button>
+            <p id="message"></p>
+        </form>
+        <div class="table-responsive-sm" >
+          <table class="table table-sm table-striped table-dark">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">User</th>
+                <th scope="col">Date</th>
+                <th scope="col">Hour</th>
+                <th scope="col" colspan="2">Service</th>
+                <th scope="col">Turn</th>
+                <th scope="col">Price</th>
+                <th scope="col" colspan="2">Comment</th>                 
+              </tr>
+            </thead>
+            <tbody id="serviceTable">              
+            </tbody>
+            <tfoot>
+              <th scope="col">Total</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col" colspan="2"></th>                
+              <th id="totalPrice" scope="col"></th>
+              <th scope="col" colspan="2"></th>
+          </tfoot>
+          </table>
+        </div>
+    </main>
+    <script src="./appscheduleday.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoflow.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/logoflow.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <title>Flow Glam</title>    
+</head>
+<body>
+    <main class='container'>
+        <div class="card card-body my-auto">
+            <h6>Day's Courses</h6>
+        </div>
+        <form class='card card-body' id="dateForm">
+            <label for="date">Date Consult</label>
+            <input type='date' id='dateConsult' autofocus>
+            <button class="btn btn-md btn-primary">Search</button>
+            <p id="message"></p>
+        </form>
+        <div class="table-responsive-sm" >
+          <table class="table table-sm table-striped table-dark">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col" colspan="2">Name of course</th>                
+                <th scope="col">Price</th>
+                <th scope="col" colspan="2">Aditional Comments</th>                 
+              </tr>
+            </thead>
+            <tbody id="courseTable">              
+            </tbody>
+            <tfoot>
+                <th scope="col">Total</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col" colspan="2"></th>                
+                <th id="totalPrice" scope="col"></th>
+                <th scope="col" colspan="2"></th>
+            </tfoot>
+          </table>
+        </div>
+        <div>
+            <button class="btn btn-md btn-primary" id="btnAllCo">All Courses</button>
+        </div>
+    </main>
+    <script src="./appcourse.js"></script>
+</body>
+</html>
